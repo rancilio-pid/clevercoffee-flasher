@@ -1,6 +1,6 @@
 {
-  "name": "CleverCoffee Flasher",
-  "version": "1.0.0",
+  "name": "CleverCoffee",
+  "version": "4.0.0 beta",
   "erase": true,
   "builds": [
     {

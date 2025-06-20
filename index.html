@@ -1,20 +1,105 @@
+
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CleverCoffee ESP Web Flasher</title>
-    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
-  </head>
-  <body>
-    <h1>CleverCoffee ESP Web Flasher</h1>
-    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-    <p>
-      Connect your device via USB, click "Install" and follow the instructions.<br>
-      <strong>Chrome, Edge, or Arc browser required. Not supported in Firefox/Safari.</strong>
-    </p>
-    <p>
-      <a href="https://github.com/rancilio-pid/clevercoffee">Firmware source code</a>
-    </p>
-  </body>
-</html>
 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ESP Web Tools -->
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+
+    <style>
+        .header-dark {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .content-area {
+            background-color: white;
+            min-height: calc(100vh - 140px);
+            padding: 3rem 0;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Dark Header -->
+<header class="header-dark">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-2">
+                <img src="assets/clevercoffee_logo.png" alt="CleverCoffee Logo" class="logo">
+            </div>
+            <div class="col-md-10">
+                <h1 class="mb-0 h2">CleverCoffee ESP Web Flasher</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- White Content Area -->
+<main class="content-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <!-- Install Card -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body text-center p-4">
+                        <h2 class="card-title h4 mb-3">Ready to Flash?</h2>
+                        <p class="card-text text-muted mb-4">Connect your ESP32 via USB and click the Connect button below and follow the instructions</p>
+
+                        <div class="d-flex justify-content-center mb-4">
+                            <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Browser Warning Card -->
+                <div class="card border-warning mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-exclamation-triangle text-warning me-3 fs-5"></i>
+                            <div>
+                                <strong>Browser Compatibility:</strong> Chrome, Edge, or Chromium-based browser required. Firefox or Safari are not supported.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Source Code Card -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Open Source</h5>
+                        <p class="card-text text-muted">View the firmware source code and contribute to the project</p>
+                        <a href="https://github.com/rancilio-pid/clevercoffee" class="btn btn-outline-dark">
+                            <i class="fab fa-github me-2"></i>View Firmware Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
