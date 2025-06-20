@@ -3,9 +3,7 @@
 <div align="center">
   <img src="https://img.shields.io/github/last-commit/rancilio-pid/clevercoffee-flasher/main" alt="Last Commit">
   <br><br>
-  <a href="https://ko-fi.com/clevercoffee" target="_blank">
-    <img height="35" style="border:0px;height:46px;" src="https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0" border="0" alt="Support us on Ko-fi">
-  </a>
+  <a href="https://ko-fi.com/clevercoffee" target="_blank" style="color: black; text-decoration: none;">Support us on Ko-fi</a>
 </div>
 
 ---
