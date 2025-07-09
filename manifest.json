@@ -6,27 +6,14 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        {
-          "path": "https://github.com/rancilio-pid/clevercoffee/releases/download/v4.0.0-beta/bootloader.bin",
-          "offset": 4096
-        },
-        {
-          "path": "https://github.com/rancilio-pid/clevercoffee/releases/download/v4.0.0-beta/partitions.bin",
-          "offset": 32768
-        },
-        {
-          "path": "https://github.com/rancilio-pid/clevercoffee/releases/download/v4.0.0-beta/firmware.bin",
-          "offset": 65536
-        },
-        {
-          "path": "https://github.com/rancilio-pid/clevercoffee/releases/download/v4.0.0-beta/littlefs.bin",
-          "offset": 3211264
-        }
+        { "path": "bootloader.bin", "offset": 4096 },
+        { "path": "partitions.bin", "offset": 32768 },
+        { "path": "firmware.bin", "offset": 65536 },
+        { "path": "littlefs.bin", "offset": 3211264 }
       ]
     }
   ],
   "new_install_improvements": true,
   "documentation": "https://manual.rancilio-pid.de"
 }
-
 
