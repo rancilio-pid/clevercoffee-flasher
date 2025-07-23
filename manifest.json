@@ -1,15 +1,15 @@
 {
   "name": "CleverCoffee",
-  "version": "4.0.0 beta",
+  "version": "4.0.0 beta2",
   "erase": true,
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "bootloader.bin", "offset": 4096 },
-        { "path": "partitions.bin", "offset": 32768 },
-        { "path": "firmware.bin", "offset": 65536 },
-        { "path": "littlefs.bin", "offset": 3211264 }
+        { "path": "firmware/bootloader.bin", "offset": 4096 },
+        { "path": "firmware/partitions.bin", "offset": 32768 },
+        { "path": "firmware/firmware.bin", "offset": 65536 },
+        { "path": "firmware/littlefs.bin", "offset": 3473408}
       ]
     }
   ],
